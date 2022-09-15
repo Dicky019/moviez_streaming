@@ -5,9 +5,9 @@ A new Flutter project.
 ## Screen
 
     - Home
-![github-small](assets/images/Tes.jpg)
+![github-small](assets/myapp/my-app.gif)
     - Search
-![github-small](assets/images/Tes.jpg)
+![github-small](assets/myapp/my-app.gif)
 
 ## Getting Started
 
