@@ -4,13 +4,13 @@ A new Flutter project.
 
 ## Screen
 
-* My App
+### - My App
 ![github-small](assets/myapp/my-app.gif)
 
-* Home
+### - Home
 ![github-small](assets/myapp/home.png)
 
-* Search
+### - Search
 ![github-small](assets/myapp/search.png)
 
 ## Getting Started
