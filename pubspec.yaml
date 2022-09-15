@@ -1,0 +1,41 @@
+name: moviez_streaming
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: 2.0.1
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets:
+    - assets/images/mulan_session.png
+    - assets/images/beauty_and_beast.png
+    - assets/images/the_dark_knight.png
+    - assets/images/the_dark2.png
+    - assets/images/the_dark_tower.png
+    - assets/images/bohemian.png
+    - assets/images/john_wick4.png
+    - assets/icons/
+
+  fonts:
+    - family: Avenir
+      fonts:
+        - asset: assets/fonts/avenir/AvenirLTStd-Black.otf
+          weight: 900
+        - asset: assets/fonts/avenir/Avenir-Heavy.ttf
+          weight: 600
+        - asset: assets/fonts/avenir/AvenirLTStd-Book.otf
+          weight: 200
+
