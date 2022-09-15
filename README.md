@@ -1,16 +1,33 @@
-# moviez_streaming
+# kedaifeed
 
 A new Flutter project.
 
+## Screen
+
+    - Home
+![github-small](assets/images/Tes.jpg)
+    - Search
+![github-small](assets/images/Tes.jpg)
+
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+* [Install Flutter](https://flutter.dev/get-started/)
+* [Install get_cli](https://pub.dev/packages/get_cli/install/)
+* Install Extension Flutter
 
-A few resources to get you started if this is your first Flutter project:
+## Documentation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* [Flutter documentation](https://flutter.dev/docs)
+* [get_cli documentation](https://pub.dev/packages/get_cli)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## use get cli
+
+```sh
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+```
+
+### run
+
+```sh
+flutter run
+```
