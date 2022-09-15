@@ -35,17 +35,31 @@ class HomeController extends GetxController {
   ];
 
   final listFilmFavorite = [
-    ContentFilmModel.withoutStar(
+    ContentFilmModel(
       color: const Color(0xff5E38E5),
       title: "John Wick 4",
       subTitle: "Watch much easier",
       image: Constants.johnWick4ImageAsset,
+      star: [
+        true,
+        true,
+        true,
+        true,
+        true,
+      ],
     ),
-    ContentFilmModel.withoutStar(
-      title: "Beauty & Beast",
-      subTitle: "Sci-Fiction",
+    ContentFilmModel(
+      title: "Bohemian",
+      subTitle: "Documentary",
       image: Constants.bohemianImageAsset,
       color: const Color(0xffFE7B02),
+      star: [
+        true,
+        true,
+        true,
+        true,
+        true,
+      ],
     ),
   ];
 }

@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:ui';
 
 import 'package:get/get.dart';
@@ -6,7 +7,7 @@ import '../../../constants.dart';
 import '../../../models/content_film_model.dart';
 
 class SearchController extends GetxController {
- final listContentFilm = [
+  final listContentFilm = [
     ContentFilmModel(
       color: const Color(0xff169E9F),
       title: "The Dark II",
@@ -46,11 +47,76 @@ class SearchController extends GetxController {
         true,
       ],
     ),
+    ContentFilmModel(
+      color: const Color(0xff169E9F),
+      title: "Mulan Session",
+      subTitle: "History, War",
+      image: Constants.mulanImageAsset,
+      star: [
+        true,
+        true,
+        true,
+        false,
+        false,
+      ],
+    ),
+    ContentFilmModel(
+      title: "Beauty & Beast",
+      subTitle: "Sci-Fiction",
+      image: Constants.beautyAndBeastImageAsset,
+      color: const Color(0xff174459),
+      star: [
+        true,
+        true,
+        true,
+        true,
+        true,
+      ],
+    ),
+    ContentFilmModel(
+      color: const Color(0xff5E38E5),
+      title: "John Wick 4",
+      subTitle: "Watch much easier",
+      image: Constants.johnWick4ImageAsset,
+      star: [
+        true,
+        true,
+        true,
+        true,
+        true,
+      ],
+    ),
+    ContentFilmModel(
+      title: "Bohemian",
+      subTitle: "Documentary",
+      image: Constants.bohemianImageAsset,
+      color: const Color(0xffFE7B02),
+      star: [
+        true,
+        true,
+        true,
+        true,
+        true,
+      ],
+    ),
   ];
 
-  final listSearch = <ContentFilmModel>[];
+  final listSearch = <ContentFilmModel>[].obs;
 
-  search (){
-    
+  void search(String text) {
+    listSearch.value = [...listContentFilm];
+    if (text.trim().isNotEmpty) {
+      log(text);
+      listSearch.value = listContentFilm.where((element) => element.title.toLowerCase().contains(text.toLowerCase())).toList();
+      // log(list.toString());
+    }
+  }
+
+  @override
+  void onInit() {
+    listContentFilm.sort((a,b)=>a.title.compareTo(b.title));
+    listSearch.value = listContentFilm;
+
+    super.onInit();
   }
 }

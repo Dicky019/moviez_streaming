@@ -13,18 +13,4 @@ class ContentFilmModel {
     required this.color,
   });
 
-  factory ContentFilmModel.withoutStar({
-    required String title,
-    required String subTitle,
-    required String image,
-    required Color color,
-  }) {
-    return ContentFilmModel(
-      color: color,
-      image: image,
-      star: [],
-      subTitle: subTitle,
-      title: title,
-    );
-  }
 }
